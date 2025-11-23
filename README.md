@@ -11,8 +11,7 @@ HelmShield consists of two nodes:
 
 ### **1. Helmet Sensor Node (XIAO ESP32)**
 - MPU6050 (3-axis accelerometer + gyro)  
-- Vibration sensor  
-- Optional buzzer + cancel button  
+- Vibration sensor   
 - Sends crash alerts using **ESP-NOW**  
 - Runs off a small helmet-mounted battery
 
@@ -50,7 +49,7 @@ HelmShield consists of two nodes:
 
 - **Local:** XIAO → Gateway using ESP-NOW  
 - **External:** SIM800L GSM module for SMS + call  
-- **Optional App:**  
+- **App:**  
   - Setup emergency contacts  
   - Manual panic button  
   - See device status (battery, last heartbeat, last alert)
@@ -114,14 +113,9 @@ Gateway returns an ACK. Retries used for reliability.
 ## 📁 Project Structure
 
 helm-shield/
-│── XIAO_ESPNow_Accident.ino
-│── BharatPi_Gateway.ino
-│── /assets
-│── /docs
+│── HelmShield_Synthax-Sender.ino
+│── HelmShield_Synthax-Receiver.ino
 │── README.md
-
-yaml
-Copy code
 
 ---
 
@@ -138,9 +132,3 @@ Copy code
 
 ChatGPT was used **only for debugging errors in the code**, documentation assistance, and refining logic descriptions.  
 All hardware design, algorithms, and system-level decisions were made by the development team.
-
----
-
-## 📜 License
-
-MIT License – free to use, modify, and distribute.
